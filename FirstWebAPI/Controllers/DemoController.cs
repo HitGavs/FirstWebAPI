@@ -7,5 +7,10 @@ namespace FirstWebAPI.Controllers
     [ApiController]
     public class DemoController : ControllerBase
     {
+        [HttpGet("Demo/add")]
+        public int Add(int x, int y)
+        {
+            return x + y + 5000;
+        }
     }
 }
